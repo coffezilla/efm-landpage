@@ -1,7 +1,4 @@
-import { project } from '../../helpers/Constrains';
 import ButtonPrimary from '../ButtonPrimary';
-
-import imgScreenshot from '../../images/computador.png';
 
 const MainBanner = () => {
 	return (
@@ -24,7 +21,7 @@ const MainBanner = () => {
 						</div>
 						<div className="col-12 col-md-6 p-3">
 							<img
-								src={`${project.basePath}${imgScreenshot.src}`}
+								src="/efut-manager-landpage/images/computador.png"
 								alt="Screenshot jogo e-fut manager"
 								width={538}
 								height={315}

@@ -37,6 +37,9 @@ module.exports = {
 		'no-console': 0,
 		'no-alert': 0,
 		'arrow-body-style': 0,
+		'object-curly-newline': ['off'], // line break when is too long
+		'jsx-a11y/no-noninteractive-element-interactions': ['off'], // interactions in tags non Button or Link
+		'jsx-a11y/click-events-have-key-events': ['off'], // allow to put onClick handles in non interactions with no keyboard event
 		'import/no-extraneous-dependencies': [
 			'error',
 			{

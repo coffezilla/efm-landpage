@@ -1,35 +1,24 @@
 import React, { useState, useCallback } from 'react';
 
 import ImageViewer from 'react-simple-image-viewer';
-import { project } from '../../helpers/Constrains';
-
-import imgPhotoGallery1 from '../../images/g1.jpg';
-import imgPhotoGallery2 from '../../images/g2.jpg';
-import imgPhotoGallery3 from '../../images/g3.jpg';
-import imgPhotoGallery4 from '../../images/g4.jpg';
-import imgPhotoGallery5 from '../../images/g5.jpg';
-import imgPhotoGallery6 from '../../images/g6.jpg';
-import imgPhotoGallery7 from '../../images/g7.jpg';
-import imgPhotoGallery8 from '../../images/g8.jpg';
 
 const MediaGallery = () => {
 	const [currentImage, setCurrentImage] = useState(0);
 	const [isViewerOpen, setIsViewerOpen] = useState(false);
 	const images = [
-		project.basePath + imgPhotoGallery1.src,
-		project.basePath + imgPhotoGallery2.src,
-		project.basePath + imgPhotoGallery3.src,
-		project.basePath + imgPhotoGallery4.src,
-		project.basePath + imgPhotoGallery5.src,
-		project.basePath + imgPhotoGallery6.src,
-		project.basePath + imgPhotoGallery7.src,
-		project.basePath + imgPhotoGallery8.src,
+		'/efut-manager-landpage/images/g1.jpg',
+		'/efut-manager-landpage/images/g2.jpg',
+		'/efut-manager-landpage/images/g3.jpg',
+		'/efut-manager-landpage/images/g4.jpg',
+		'/efut-manager-landpage/images/g5.jpg',
+		'/efut-manager-landpage/images/g6.jpg',
+		'/efut-manager-landpage/images/g7.jpg',
+		'/efut-manager-landpage/images/g8.jpg',
 	];
 
 	const openImageViewer = useCallback((index) => {
 		setCurrentImage(index);
 		setIsViewerOpen(true);
-		console.log('liberatdores', imgPhotoGallery1);
 	}, []);
 
 	const closeImageViewer = () => {

@@ -29,7 +29,6 @@ const Footer = () => {
 						<div className="col-12 col-sm-6 col-md-3">
 							<ListClean list={footerListDefault} />
 						</div>
-						<div className="col-12 col-md-6"></div>
 					</div>
 				</div>
 			</footer>

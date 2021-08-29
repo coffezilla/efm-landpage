@@ -1,13 +1,11 @@
 import React from 'react';
-import { project } from '../../helpers/Constrains';
+
 import ButtonPrimary from '../ButtonPrimary';
 
 interface IProps {
 	type: 'BANNER_IMAGE' | 'BANNER_MUTED';
-	background: {
-		src: string;
-	};
-	image: React.ReactNode;
+	background: any;
+	image?: any;
 	title: string;
 	description?: string;
 }
@@ -20,7 +18,7 @@ const BannerSecondary = ({ type, background, image, title, description }: IProps
 					className="banner-secondary"
 					style={
 						background && {
-							backgroundImage: `url(${project.basePath}${background.src})`,
+							backgroundImage: `url(${background})`,
 						}
 					}
 				>
@@ -28,7 +26,7 @@ const BannerSecondary = ({ type, background, image, title, description }: IProps
 						<div className="row justify-content-between align-items-center">
 							{image && (
 								<div className="col-12 col-md-6 p-5 ">
-									<img src={`${project.basePath}${image.src}`} alt="E-fut Manager Screenshot" />
+									<img src={`${image}`} alt="E-fut Manager Screenshot" />
 								</div>
 							)}
 							<div className="col-12 col-md-6">
@@ -48,7 +46,7 @@ const BannerSecondary = ({ type, background, image, title, description }: IProps
 			className="banner-secondary"
 			style={
 				background && {
-					backgroundImage: `url(${project.basePath}${background.src})`,
+					backgroundImage: `url(${background})`,
 				}
 			}
 		>
@@ -62,7 +60,7 @@ const BannerSecondary = ({ type, background, image, title, description }: IProps
 						</div>
 					</div>
 					<div className="col-6 col-md-auto col-image p-0 d-none d-lg-flex">
-						{image && <img src={`${project.basePath}${image.src}`} alt={title} />}
+						{image && <img src={`${image}`} alt={title} />}
 					</div>
 				</div>
 			</div>
