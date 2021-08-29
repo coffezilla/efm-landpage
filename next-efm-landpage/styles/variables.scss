@@ -1,0 +1,16 @@
+/* bootstrap var */
+
+/* custom var */
+/* $mainTitleFont: 'Abel', sans-serif; */
+/* $mainBodyFont: 'Open Sans', sans-serif; */
+$mainBodyFont: 'Roboto', sans-serif;
+$mainBodyFont2: 'Oswald', sans-serif;
+
+// space between columns
+$grid-gutter-width: 1rem;
+
+/* bootstrap basic */
+// @import "/node_modules/bootstrap/scss/bootstrap";
+@import '/node_modules/bootstrap/scss/functions';
+@import '/node_modules/bootstrap/scss/variables';
+@import '/node_modules/bootstrap/scss/mixins';

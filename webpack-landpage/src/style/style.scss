@@ -1,0 +1,182 @@
+$mainBodyFont: 'Roboto', sans-serif;
+$mainBodyFont2: 'Oswald', sans-serif;
+
+/* bootstrap basic */
+@import '/node_modules/bootstrap/scss/functions';
+@import '/node_modules/bootstrap/scss/variables';
+@import '/node_modules/bootstrap/scss/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+section,
+footer {
+	background-color: #e4e4e4;
+
+	&:nth-child(odd) {
+		background-color: #bdbdbd;
+	}
+}
+
+.main-menu {
+}
+
+.main-banner {
+	background-color: #000;
+
+	h1 {
+		font-size: 3rem;
+		color: white;
+	}
+
+	p {
+		font-size: 1.2rem;
+		color: white;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	@include media-breakpoint-down(sm) {
+		background-color: red;
+	}
+}
+
+.btn-prim {
+	font-size: 1.1rem;
+	background: #e03653;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+
+	&--mid {
+	}
+
+	&:hover {
+		background-color: #dc193a;
+	}
+
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+	}
+}
+
+.card-mid {
+	// border: 1px solid red;
+	background-color: #f5f5f5;
+
+	&__cover {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__content {
+		padding: 1rem;
+		text-align: center;
+
+		h3 {
+			font-size: 1.4rem;
+			font-weight: bold;
+			padding: 1rem 0px;
+		}
+	}
+}
+
+.banner-secondary {
+	background-position: right;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-size: auto 100%;
+
+	img {
+		max-width: 100%;
+	}
+
+	&__description {
+		h2 {
+			font-size: 1.7rem;
+			font-weight: bold;
+			color: white;
+			// padding-bottom: 2rem;
+			line-height: 2.5rem;
+		}
+		p {
+			color: white;
+			font-size: 1.1rem;
+			margin: 0;
+		}
+	}
+}
+
+.header-section {
+	text-align: center;
+	max-width: 600px;
+	margin: auto;
+	// padding: 2rem 0;
+	h2 {
+		font-weight: bold;
+		font-size: 2rem;
+		padding: 0.8rem 0px;
+		margin: 0;
+	}
+}
+
+.media-gallery {
+	img {
+		max-width: 100%;
+	}
+}
+
+ul.list-clean {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 2rem;
+
+	a {
+		text-decoration: none;
+		color: #3e3e3e;
+		&:hover {
+			color: #3f51b5;
+		}
+	}
+}
+
+footer {
+	h3 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin: 0;
+	}
+}
+
+footer.ribbon {
+	padding: 0;
+	font-size: 0.7rem;
+
+	p {
+		margin: 0;
+	}
+}
+
+.legend {
+	font-size: 0.7rem !important;
+	opacity: 0.8;
+}
+
+h1 {
+	@include media-breakpoint-down(sm) {
+		font-size: 2rem !important;
+	}
+}
+h2 {
+	@include media-breakpoint-down(sm) {
+		font-size: 1.6rem !important;
+	}
+}
+h3 {
+	@include media-breakpoint-down(sm) {
+		font-size: 1.2rem !important;
+	}
+}

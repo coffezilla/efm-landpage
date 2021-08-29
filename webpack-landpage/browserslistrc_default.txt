@@ -1,0 +1,8 @@
+# Rename this file to .browserslistrc
+# This file doesn't work with webpack server live reload
+
+# only modern
+# last 2 Chrome versions
+
+# default ( > 0.5%, last 2 versions, Firefox ESR, not dead )
+defaults
