@@ -1,4 +1,4 @@
-# Termos de uso na tela de registro
+# E-Fut manager
 
 Suporte para jogador
 
