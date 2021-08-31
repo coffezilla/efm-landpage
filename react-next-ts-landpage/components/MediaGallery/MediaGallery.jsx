@@ -6,14 +6,14 @@ const MediaGallery = () => {
 	const [currentImage, setCurrentImage] = useState(0);
 	const [isViewerOpen, setIsViewerOpen] = useState(false);
 	const images = [
-		'/efut-manager-landpage/images/g1.jpg',
-		'/efut-manager-landpage/images/g2.jpg',
-		'/efut-manager-landpage/images/g3.jpg',
-		'/efut-manager-landpage/images/g4.jpg',
-		'/efut-manager-landpage/images/g5.jpg',
-		'/efut-manager-landpage/images/g6.jpg',
-		'/efut-manager-landpage/images/g7.jpg',
-		'/efut-manager-landpage/images/g8.jpg',
+		'/landpage/images/g1.jpg',
+		'/landpage/images/g2.jpg',
+		'/landpage/images/g3.jpg',
+		'/landpage/images/g4.jpg',
+		'/landpage/images/g5.jpg',
+		'/landpage/images/g6.jpg',
+		'/landpage/images/g7.jpg',
+		'/landpage/images/g8.jpg',
 	];
 
 	const openImageViewer = useCallback((index) => {

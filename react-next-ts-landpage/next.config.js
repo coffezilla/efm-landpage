@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
 	reactStrictMode: true,
-	basePath: '/efut-manager-landpage',
+	basePath: '/landpage',
 	images: {
 		disableStaticImages: true,
 	},

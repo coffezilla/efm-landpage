@@ -34,8 +34,19 @@ const Policy: NextPage = () => {
 				<ContentText>
 					<h1>Política de privacidade</h1>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aliquid aspernatur.
-						Soluta!
+						Utilizamos o Google Analytics para administrar os acessos e gerar relatórios de acesso
+						dinâmico. Este relatório nos ajuda a controlar a estabilidade do servidor para manter
+						uma melhor estrutura para o gameplay de todos.
+					</p>
+					<p>Utilizamos Cookie para poder utilizar o Google Analytics.</p>
+					<p>
+						O E-Fut Manager é um projeto feito e mantido por BHX Sites sem fins lucrativos. Os dados
+						coletados deste jogo é de propriedade da BHX Sites e não será compartilhado com
+						terceiros.
+					</p>
+					<p>
+						A BHX Sites não se responsabiliza por uso indevido de marca ou imagens enviadas via
+						upload por usuários com trademark.
 					</p>
 				</ContentText>
 			</main>

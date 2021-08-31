@@ -21,7 +21,7 @@ const MainBanner = () => {
 						</div>
 						<div className="col-12 col-md-6 p-3">
 							<img
-								src="/efut-manager-landpage/images/computador.png"
+								src="/landpage/images/computador.png"
 								alt="Screenshot jogo e-fut manager"
 								width={538}
 								height={315}
