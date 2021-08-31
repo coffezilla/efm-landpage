@@ -20,12 +20,7 @@ const MainBanner = () => {
 							</p>
 						</div>
 						<div className="col-12 col-md-6 p-3">
-							<img
-								src="/landpage/images/computador.png"
-								alt="Screenshot jogo e-fut manager"
-								width={538}
-								height={315}
-							/>
+							<img src="/landpage/images/computador.png" alt="Screenshot jogo e-fut manager" />
 						</div>
 					</div>
 				</div>

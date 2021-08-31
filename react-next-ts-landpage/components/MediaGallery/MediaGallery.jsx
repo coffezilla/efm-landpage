@@ -39,8 +39,6 @@ const MediaGallery = () => {
 											alt="Screenshot jogo e-fut manager"
 											onClick={() => openImageViewer(index)}
 											style={{ margin: '2px' }}
-											width={270}
-											height={173}
 										/>
 									</div>
 								))}

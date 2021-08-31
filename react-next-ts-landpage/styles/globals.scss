@@ -41,7 +41,7 @@ $mainBodyFont2: 'Oswald', sans-serif;
 	}
 
 	@include media-breakpoint-down(sm) {
-		background-color: red;
+		background-color: white;
 	}
 }
 
@@ -92,11 +92,15 @@ $mainBodyFont2: 'Oswald', sans-serif;
 
 .banner-secondary {
 	background-position: right;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-color: #673ab7;
 	background-size: auto auto;
-	background-position: bottom right;
 	overflow: hidden;
+
+	&--cover {
+		background-position: center;
+		background-size: cover;
+	}
 
 	@include media-breakpoint-down(md) {
 		background-image: initial !important;
@@ -115,11 +119,11 @@ $mainBodyFont2: 'Oswald', sans-serif;
 
 	&__description {
 		h2 {
-			font-size: 3.7rem;
+			font-size: 2.7rem;
 			font-weight: bold;
 			color: white;
 			// padding-bottom: 2rem;
-			line-height: 3.5rem;
+			line-height: 2.7rem;
 		}
 		p {
 			color: white;

@@ -15,7 +15,7 @@ const BannerSecondary = ({ type, background, image, title, description }: IProps
 		return (
 			<>
 				<section
-					className="banner-secondary"
+					className="banner-secondary banner-secondary--cover"
 					style={
 						background && {
 							backgroundImage: `url(${background})`,
