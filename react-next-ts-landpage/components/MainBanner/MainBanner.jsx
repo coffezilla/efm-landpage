@@ -7,7 +7,7 @@ const MainBanner = () => {
 				<div className="container py-0 py-md-4">
 					<div className="row justify-content-between align-items-center">
 						<div className="row col-12 col-md-6 py-3 py-md-5 m-0">
-							<h1>E-FUT MANAGER 21a</h1>
+							<h1>e-FUT MANAGER 21</h1>
 							<div className="col-12 col-md-7 p-0">
 								<p>
 									O jogo de futebol Manager grátis para jogar com os amigos e desafiar jogadores do
