@@ -49,7 +49,8 @@ jobs:
     
     # efm.bhxsites.com.br/landpage
     - name: 📂 Sync files - efm.bhxsites.com.br/landpage
-      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+    # using 4.1.0 has a bug of permission 550
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
