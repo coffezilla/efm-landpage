@@ -1,0 +1,58 @@
+# pipeline: prod
+# dev -> hmg -> [production]
+# efm.bhxsites.com.br/landpage
+
+on: 
+  push:
+    branches:
+      - main
+name: 🚀 Deploy website on push
+jobs:
+
+  build:
+    name: nodejs
+    runs-on: ubuntu-latest
+
+    # default values
+    # if not, you have to put working-directory in each run call
+    defaults:
+      run:
+        working-directory: ./react-next-ts-landpage
+    steps:
+    - name: clone respository
+      uses: actions/checkout@v2
+    - name: use nodejs
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: install dependencies
+      run: npm install
+    - name: run build & export
+      run: npm run export
+    - name: save artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: react-github-actions-build
+        path: react-app/out
+
+  web-deploy:
+    needs: build
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # get build code
+    - name: Get artifact
+      uses: actions/download-artifact@v1
+      with:
+        name: react-github-actions-build     
+    
+    # efm.bhxsites.com.br/landpage
+    - name: 📂 Sync files - efm.bhxsites.com.br/landpage
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ${{ secrets.ftp_host }}
+        username: ${{ secrets.ftp_user }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: react-github-actions-build/
+        server-dir: public_html/efm.bhxsites.com.br/landpage/
