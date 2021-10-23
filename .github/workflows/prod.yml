@@ -55,4 +55,4 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         local-dir: react-github-actions-build/
-        server-dir: public_html/efm.bhxsites.com.br/landpage/
+        server-dir: efm.bhxsites.com.br/landpage/
