@@ -54,6 +54,7 @@ module.exports = {
 		// nextjs
 		'react/react-in-jsx-scope': 'off',
 		'import/extensions': 'off', // allow every code in every extension
+		'react/jsx-one-expression-per-line': 'off',
 		// 'operator-linebreak': ['error', 'before'],
 		'no-use-before-define': 'off',
 		'operator-linebreak': ['off'], // linebreak prettier error of || && ? :
