@@ -6,6 +6,7 @@ const Footer = () => {
 		{ title: 'Login', url: 'https://efm.bhxsites.com.br/login' },
 		{ title: 'Termos de uso', url: '/terms' },
 		{ title: 'Política de privacidade', url: '/policy' },
+		{ title: 'eFut Manager App', url: '/policy-app' },
 	];
 
 	const footerListDefault = [

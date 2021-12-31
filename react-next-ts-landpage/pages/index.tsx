@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 					name="description"
 					content="E-Fut Manager Online Game de técnico de futebol com times brasileiros e europeus. Conquiste a Libertadores, a Champions League e o mundial de clubes como técnico de futebol online."
 				/>
-				<link rel="icon" href="/efut-manager-landpage/favicon.ico" />
+				<link rel="icon" href="/landpage/favicon.ico" />
 			</Head>
 			<main>
 				<MainMenu />

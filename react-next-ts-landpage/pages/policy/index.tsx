@@ -15,7 +15,7 @@ const Policy: NextPage = () => {
 					name="description"
 					content="Política de privacidade do jogo onine E-fut Manager. É importante ler os nossa política de privacidade pois nosso jogo é gratuito e sem fins lucrativos"
 				/>
-				<link rel="icon" href="/efut-manager-landpage/favicon.ico" />
+				<link rel="icon" href="/landpage/favicon.ico" />
 			</Head>
 			<main>
 				<MainMenu />
